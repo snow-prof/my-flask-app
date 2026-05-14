@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5  # 최신 v5 액션 사용
         with:
-          python-version: '3.12'       # CI 안정성을 위해 3.12로 고정
+          python-version: '3.14'       # CI 안정성을 위해 3.12로 고정
       - run: pip install flake8
       - run: flake8 app/ tests/
 
@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.14'
       - run: pip install -r requirements.txt
       # [해결 핵심] PYTHONPATH를 현재 디렉토리(.)로 명시적 주입
       - name: Run Pytest
