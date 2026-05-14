@@ -1,6 +1,8 @@
 from flask import Flask
 from app.utils import is_positive
+
 app = Flask(__name__)
+
 @app.get('/')
 def home():
     result = is_positive(10)
