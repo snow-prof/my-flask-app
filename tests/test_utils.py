@@ -7,4 +7,3 @@ def test_positive_number():
 
 def test_negative_number():
     assert is_positive(-5) is False
-
