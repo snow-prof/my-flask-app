@@ -7,8 +7,9 @@ app = Flask(__name__)
 
 @app.get('/')
 def home():
-    result = is_positive(10)
-    return f'[v1] Flask CI/CD 데모 (로직 체크: {result})'
+#    result = is_positive(10)
+#    return f'[v1] Flask CI/CD 데모 (로직 체크: {result})'
+    return 'hello world'
 
 
 if __name__ == '__main__':
